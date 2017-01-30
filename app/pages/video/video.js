@@ -34,8 +34,8 @@ export class VideoPage {
         console.log('videoCaptureFail, err: ', err);
       },
       {
-          limit: 1,
-          duration: 15
+          limit: 10, // limit after recording in minutes
+          duration: 600 // limit recording time in seconds
       }
     );
   }
